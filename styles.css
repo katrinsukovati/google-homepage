@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
+  color: #0f172a;
 }
 
 .google-header {
@@ -58,4 +59,69 @@ header {
 
 body {
   font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.input-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* occupy as much horiztonal width as possible */
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid rgb(238, 238, 238);
+  max-width: 500px;
+  border-radius: 1rem;
+}
+
+.input-bar__input {
+  flex: 1;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.input-bar:hover,
+.input-bar:focus-within {
+  box-shadow: 0 0 4px 1px rgb(238, 238, 238);
+}
+
+.input-bar__icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title-text {
+  font-size: 3rem;
+}
+
+.input-icon:hover {
+  opacity: 0.6;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn-grid {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.5rem;
 }
